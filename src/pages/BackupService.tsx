@@ -143,7 +143,7 @@ const BackupService = () => {
     const config = {
       InProgress: {
         icon: Loader2,
-        className: "bg-primary/20 text-primary animate-spin",
+        className: "bg-primary/20 text-primary",
         label: "Em Progresso"
       },
       Completed: {
@@ -158,7 +158,7 @@ const BackupService = () => {
       },
       Restoring: {
         icon: RefreshCw,
-        className: "bg-warning/20 text-warning animate-spin",
+        className: "bg-warning/20 text-warning",
         label: "Restaurando"
       }
     };
@@ -418,7 +418,7 @@ const BackupService = () => {
         <Card className="border-primary/50">
           <CardHeader>
             <CardTitle className="flex items-center gap-2 text-primary">
-              <Loader2 className="w-5 h-5 animate-spin" />
+              <Loader2 className="w-5 h-5" />
               Backups em Progresso
             </CardTitle>
           </CardHeader>
