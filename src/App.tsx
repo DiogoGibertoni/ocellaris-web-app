@@ -20,6 +20,7 @@ import Login from "./pages/Login";
 import Pricing from "./pages/Pricing";
 import LandingPages from "./pages/LandingPages";
 import SMSGateway from "./pages/SMSGateway";
+import BackupService from "./pages/BackupService";
 
 const queryClient = new QueryClient();
 
@@ -45,6 +46,7 @@ const App = () => (
           <Route path="/settings" element={<Layout><Settings /></Layout>} />
           <Route path="/landing-pages" element={<Layout><LandingPages /></Layout>} />
           <Route path="/sms-gateway" element={<Layout><SMSGateway /></Layout>} />
+          <Route path="/backup-service" element={<Layout><BackupService /></Layout>} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

@@ -14,7 +14,8 @@ import {
   Fish,
   CreditCard,
   Globe,
-  MessageSquare
+  MessageSquare,
+  Database
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import ocellarisLogo from "@/assets/ocellaris-logo.png";
@@ -33,6 +34,7 @@ const Layout = ({ children }: LayoutProps) => {
     { path: "/templates", icon: FileText, label: "Templates" },
     { path: "/landing-pages", icon: Globe, label: "Landing Pages" },
     { path: "/sms-gateway", icon: MessageSquare, label: "SMS Gateway" },
+    { path: "/backup-service", icon: Database, label: "Backup Service" },
     { path: "/analytics", icon: BarChart3, label: "Relatórios" },
     { path: "/users", icon: Users, label: "Usuários" },
     { path: "/user-profiles", icon: Users, label: "Perfis de Usuários" },
