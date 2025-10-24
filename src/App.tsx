@@ -18,6 +18,8 @@ import Settings from "./pages/Settings";
 import NotFound from "./pages/NotFound";
 import Login from "./pages/Login";
 import Pricing from "./pages/Pricing";
+import LandingPages from "./pages/LandingPages";
+import SMSGateway from "./pages/SMSGateway";
 
 const queryClient = new QueryClient();
 
@@ -41,6 +43,8 @@ const App = () => (
           <Route path="/library" element={<Layout><Library /></Layout>} />
           <Route path="/profile" element={<Layout><Profile /></Layout>} />
           <Route path="/settings" element={<Layout><Settings /></Layout>} />
+          <Route path="/landing-pages" element={<Layout><LandingPages /></Layout>} />
+          <Route path="/sms-gateway" element={<Layout><SMSGateway /></Layout>} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

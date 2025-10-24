@@ -1,18 +1,20 @@
 import { ReactNode } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { 
-  BarChart3, 
-  Mail, 
-  Settings, 
-  Users, 
-  FileText, 
-  History, 
+import {
+  BarChart3,
+  Mail,
+  Settings,
+  Users,
+  FileText,
+  History,
   BookOpen,
   Shield,
   Plus,
   Home,
   Fish,
-  CreditCard
+  CreditCard,
+  Globe,
+  MessageSquare
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import ocellarisLogo from "@/assets/ocellaris-logo.png";
@@ -29,6 +31,8 @@ const Layout = ({ children }: LayoutProps) => {
     { path: "/campaigns", icon: Mail, label: "Campanhas" },
     { path: "/create-campaign", icon: Plus, label: "Nova Campanha" },
     { path: "/templates", icon: FileText, label: "Templates" },
+    { path: "/landing-pages", icon: Globe, label: "Landing Pages" },
+    { path: "/sms-gateway", icon: MessageSquare, label: "SMS Gateway" },
     { path: "/analytics", icon: BarChart3, label: "Relatórios" },
     { path: "/users", icon: Users, label: "Usuários" },
     { path: "/user-profiles", icon: Users, label: "Perfis de Usuários" },
